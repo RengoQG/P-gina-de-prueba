@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="estilos.css"> 
+   <!-- Sweet Alert -->
+		<script src="dist/sweetalert.min.js"></script>
+		<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>	
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--Ecriptar-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bcrypt/5.0.0/bcrypt.min.js"></script>
+
+    <!-- Asegúrate de ajustar la ruta al archivo CSS según tu estructura de carpetas -->
+    <title>Tu Página con Olas</title>
+    
+</head>
+<body>    
+    <!--HEADER-->
+    <header>
+        <div class="header">
+            <h1>THE TITAN</h1>
+            <h4>La mejor página de tecnología maldito</h4>
+        </div>
+    </header>
+    <!---->
+    <div class="juntos">
+
+        <div class="div8">
+            <div class="butn" id="prev-btn">&#8249;</div>
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="imagenes/xbox.png" alt="Imagen 1">
+                        <img src="imagenes/play5.webp" alt="Imagen 2">
+                        <img src="imagenes/switch.png" alt="Imagen 3">
+                    </div>
+                </div>
+            <div class="butn" id="next-btn">&#8250;</div>
+        </div>
+        <div class="div4 ">
+                <div class="card cardForm shadow-lg">
+                    <div class="card-body shadow">
+                        <form id="formulario">
+                            <div class="mb-3">
+                            <label  class="form-label">Nombre</label>
+                            <input type="email" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            <label class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="correo" aria-describedby="emailHelp"><br>
+                            <button type="submit" class="btn btn-primary btn-block w-100">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contenedor para las olas -->
+    <div id="wave-container">
+        <svg id="fondo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720">
+            <!-- Mantén la forma original en la parte superior y cambia la parte inferior -->
+            <path fill="#FFFFFF" fill-opacity="1" d="M0,384L60,405.3C120,427,240,469,360,453.3C480,437,600,363,720,357.3C840,352,960,416,1080,442.7C1200,469,1320,459,1380,453.3L1440,448L1440,720L0,720Z"></path>
+        </svg>
+
+        <!-- Segundo SVG (abajo, invertido) -->
+    <div id="segundo-svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720">
+            <path fill="#FFFFFF" fill-opacity="1" d="M0,420C120,320,240,220,360,220C480,220,600,320,720,320C840,320,960,220,1080,220C1200,220,1320,320,1440,420L1440,0L0,0Z"></path>
+        </svg>
+    </div>
+    </div>   
+    <!---->
+    <div class="tituloInfo">
+        <h2>Información</h2>
+    </div>
+    <div class="info">
+        <div class="card card1 shadow-lg">
+            <div class="card-imagen">
+                <img src="imagenes/spide.jpeg" alt="">
+            </div>
+            <div class="card-body">
+                <h4 class="info1">En la era digital actual, la tecnología avanza a pasos agigantados,
+                    y nuestra página web está aquí para mantenerte al día con las últimas innovaciones,
+                    tendencias y noticias tecnológicas.</h4>
+            </div>
+        </div>
+        
+        <div class="image-containerInfo">
+            <img src="imagenes/mando.png" alt="Imagen de un mando">
+        </div>  
+
+        <div class="card card1 shadow-lg">
+            <div class="card-imagen">
+                <img src="imagenes/bat.jpeg" alt="">
+            </div>
+            <div class="card-body">
+                <h4 class="info1">En la era digital actual, la tecnología avanza a pasos agigantados,
+                    y nuestra página web está aquí para mantenerte al día con las últimas innovaciones,
+                    tendencias y noticias tecnológicas.</h4>
+            </div>
+        </div>
+    </div>
+
+   <div class="beneficios" >
+        <svg id="fondo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720">
+            <!-- Mantén la forma original en la parte superior y cambia la parte inferior -->
+         <path fill="#FFFFFF" fill-opacity="1" d="M0,384L60,405.3C120,427,240,469,360,453.3C480,437,600,363,720,357.3C840,352,960,416,1080,442.7C1200,469,1320,459,1380,453.3L1440,448L1440,720L0,720Z"></path>
+        </svg>
+        <div class="personas">
+            <div class="card cardBene">
+                <img src="imagenes/card.png" alt="Imagen 1">
+                <p>Los mejores</p>
+            </div>
+            <div class="card cardBene">
+                <img src="imagenes/card2.png" alt="Imagen 2">
+                <p>Los mejores</p>
+            </div>
+            <div class="card cardBene">
+                <img src="imagenes/card3.png" alt="Imagen 3">
+                <p>Los mejores</p>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+<script src="inddex.js"></script>
+</body>
+</html>
